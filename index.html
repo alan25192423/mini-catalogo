@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Catálogo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    header img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      margin: 5px 0;
+    }
+    header h2 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #ccc;
+    }
+    nav {
+      background: #444;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      padding: 20px;
+    }
+    .categorias {
+      width: 20%;
+      background: #fff;
+      padding: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .categorias h3 {
+      margin-top: 0;
+    }
+    .productos {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding-left: 20px;
+    }
+    .producto {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .producto img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .producto h4 {
+      margin: 10px 0 5px;
+    }
+    .producto p {
+      margin: 5px 0;
+    }
+    .producto button {
+      background: #333;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/100x40" alt="Logo">
+    <h1>Mini Catálogo</h1>
+    <h1 style="font-size:2rem; margin:10px 0;">Alan Alexis Montiel Médico ITSX</h1>
+    <h2>¡Bienvenido!</h2>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main>
+    <aside class="categorias">
+      <h3>Categorías</h3>
+      <ul>
+        <li>Ropa</li>
+        <li>Accesorios</li>
+        <li>Snacks</li>
+      </ul>
+    </aside>
+
+    <section class="productos">
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150" alt="Producto 1">
+        <h4>Camiseta</h4>
+        <p>$20</p>
+        <button>Ver más</button>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150" alt="Producto 2">
+        <h4>Gafas de sol</h4>
+        <p>$15</p>
+        <button>Ver más</button>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200x150" alt="Producto 3">
+        <h4>Papas fritas</h4>
+        <p>$5</p>
+        <button>Ver más</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contacto | Créditos | Redes Sociales</p>
+  </footer>
+</body>
+</html>
